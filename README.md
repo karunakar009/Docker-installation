@@ -27,9 +27,9 @@ The unofficial packages to uninstall are:
   Moreover, Docker Engine depends on containerd and runc. Docker Engine bundles these dependencies as one bundle: containerd.io. If you have installed the containerd or runc previously, uninstall them to avoid conflicts with the versions bundled with Docker Engine.
 
 Run the following command to uninstall all conflicting packages:
-~
+~~~
  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg
-~
+~~~
 
 
 
