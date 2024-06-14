@@ -69,5 +69,30 @@ echo \
 sudo apt-get update
 ~~~
 
+2.Install the Docker packages.
+
+To install the latest version, run:
+~~~
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+~~~
+3.Verify that the Docker Engine installation is successful by running the hello-world image.
+
+~~~
+sudo docker run hello-world
+~~~
+This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
+
+You have now successfully installed and started Docker Engine.
+
+
+
+Tip
+
+Receiving errors when trying to run without root?
+
+The docker user group exists but contains no users, which is why you’re required to use sudo to run Docker commands. Continue to Linux postinstall to allow non-privileged users to run Docker commands and for other optional configuration steps.
+
+
+
 
   
