@@ -53,7 +53,7 @@ You can install Docker Engine in different ways, depending on your needs:
   Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository.
   1.Set up Docker's apt repository.
 
-  ~ ~ ~
+~~~
   # Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl
@@ -67,7 +67,7 @@ echo \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
-~ ~ ~
+~~~
 
 
   
